@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+        
+<body>
+    <nav class="navi">
+        <a href="/">Home</a>
+        <a href="/rules">Rules</a>
+    </nav>
+    <hr>
+
+    <div class="score-board">
+        <div id="player1-label" class="badge">Player 1</div>
+        <div id="player2-label" class="badge">Player 2</div>
+        <span id="plaer1-score">0</span>:<span id="player2-score">0</span>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+</html>

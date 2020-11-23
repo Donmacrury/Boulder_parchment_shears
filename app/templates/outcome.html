@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <body>
+            
+        <header>
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+            <h1>And the winner is!</h1>
+        </header>    
+   
+        <p id="action-message">This is the outcome!</p>
+    
+    </body>
+
+{% endblock content %}

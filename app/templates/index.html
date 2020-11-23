@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <body>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        </header>
+
+        <div class="choices">
+            <div id="r" class="choice">
+                <a href="/rock">
+                    <img src={{ url_for('static', filename='images/icons8-hand-rock-50.png') }} alt="">
+                </a>
+            </div>
+            <div id="s" class="choice">
+                <a href="/scissors">
+                    <img src={{ url_for('static', filename='images/icons8-hand-scissors-50.png') }} alt="">
+                </a>
+            </div>
+            <div id="p" class="choice">
+                <a href="/paper">
+                    <img src={{ url_for('static', filename='images/icons8-hand-50.png') }} alt="">
+                </a>
+            </div>
+        </div>
+
+        <p id="action-message">Make Your Move</p>
+
+    </body>
+
+{% endblock content %}
